@@ -306,7 +306,7 @@ bool verify_header(const header_type& header_msg)
         || header_msg.command == "headers"
         || header_msg.command == "alert")
     {
-        // Should check if sizes make sense
+        // TODO: Should check if sizes make sense
         // i.e for addr should be multiple of 30x + 1 byte
         // Also then add ASSERTS to handlers above.
     }
